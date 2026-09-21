@@ -1,0 +1,249 @@
+/* =========================================================
+   RESET
+   ========================================================= */
+
+/* Box sizing + remove default margins */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* =========================================================
+   HTML / BODY
+   ========================================================= */
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+
+  scroll-behavior: smooth;
+
+  /* Firefox scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: var(--clr-gray-300) transparent;
+}
+
+body {
+  min-height: 100dvh;
+  line-height: 1.5;
+
+  /* Better font rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Prevent accidental horizontal scrolling */
+  overflow-x: hidden;
+}
+
+/* React root */
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+#root {
+  min-height: 100dvh;
+}
+
+/* =========================================================
+   TYPOGRAPHY
+   ========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Prevent long words/URLs from breaking layouts */
+p,
+li,
+a {
+  overflow-wrap: break-word;
+}
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* =========================================================
+   LISTS
+   ========================================================= */
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* =========================================================
+   MEDIA
+   ========================================================= */
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+/* Make videos responsive */
+video {
+  height: auto;
+}
+
+/* =========================================================
+   FORMS
+   ========================================================= */
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Don't remove native form controls unless you're
+   intentionally creating custom controls */
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+button,
+[type="button"],
+[type="submit"],
+[type="reset"] {
+  cursor: pointer;
+}
+
+/* =========================================================
+   ACCESSIBILITY / FOCUS
+   ========================================================= */
+
+:focus-visible {
+  outline: 2px solid var(--clr-primary);
+  outline-offset: 2px;
+}
+
+/* =========================================================
+   ANCHOR TARGETS
+   ========================================================= */
+
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* =========================================================
+   MOBILE / TOUCH
+   ========================================================= */
+
+/* Prevent tap highlight from looking inconsistent */
+button,
+a,
+input,
+textarea,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Better touch behaviour for interactive elements */
+button,
+a {
+  touch-action: manipulation;
+}
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Smooth scrolling when user hasn't disabled motion */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+/* =========================================================
+   MOBILE SAFETY / SMALL SCREENS
+   ========================================================= */
+
+/* Prevent text/content from forcing horizontal overflow */
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Make form controls usable on small screens */
+input,
+textarea,
+select {
+  max-width: 100%;
+}
+
+/* =========================================================
+   WEBKIT SCROLLBAR
+   ========================================================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--clr-gray-300);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
