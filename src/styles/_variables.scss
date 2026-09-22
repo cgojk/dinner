@@ -1,0 +1,291 @@
+// @font-face {
+//   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+//   font-family: 'League Spartan';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url('/fonts/league-spartan-v14-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+// }
+
+
+// /* league-spartan-200 - latin */
+// @font-face {
+//   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+//   font-family: 'League Spartan';
+//   font-style: normal;
+//   font-weight: 200;
+//   src: url('/fonts/league-spartan-v14-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+// }
+
+
+// /* league-spartan-500 - latin */
+// @font-face {
+//   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+//   font-family: 'League Spartan';
+//   font-style: normal;
+//   font-weight: 500;
+//   src: url('/fonts/league-spartan-v14-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+// }
+
+// /* league-spartan-600 - latin */
+// @font-face {
+//   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+//   font-family: 'League Spartan';
+//   font-style: normal;
+//   font-weight: 600;
+//   src: url('/fonts/league-spartan-v14-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+// }
+
+
+// /* league-spartan-700 - latin */
+// @font-face {
+//   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+//   font-family: 'League Spartan';
+//   font-style: normal;
+//   font-weight: 700;
+//   src: url('/fonts/league-spartan-v14-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+// }
+
+
+:root {
+
+  /* =========================================================
+     COLORS
+     ========================================================== */
+
+  /* ---------------------------------------------------------
+     NEUTRAL
+     --------------------------------------------------------- */
+
+  --neutral-950: hsl(0, 0%, 0%);
+  --neutral-900: hsl(0, 0%, 7%);
+  --neutral-700: hsl(0, 0%, 27%);
+  --neutral-600: hsl(0, 0%, 30%);
+  --neutral-400: hsl(0, 0%, 56%);
+  --neutral-100: hsl(0, 0%, 93%);
+  --neutral-0: hsl(0, 0%, 100%);
+
+
+  /* ---------------------------------------------------------
+     SLATE
+     --------------------------------------------------------- */
+
+  --slate-800: hsl(218, 21%, 18%);
+  --slate-500: hsl(217, 14%, 42%);
+
+
+  /* ---------------------------------------------------------
+     RED
+     --------------------------------------------------------- */
+
+  --red-500: hsl(0, 43%, 50%);
+
+
+  /* ---------------------------------------------------------
+     STONE
+     --------------------------------------------------------- */
+
+  --stone-500: hsl(27, 22%, 51%);
+}
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap');
+
+:root {
+
+  /* =========================================================
+     COLORS
+     ========================================================== */
+
+  --grey-900: hsl(0, 0%, 8%);
+  --grey-700: hsl(0, 0%, 27%);
+  --gold-500: hsl(24, 56%, 63%);
+  --white: hsl(0, 0%, 100%);
+
+
+  /* =========================================================
+     FONT FAMILIES
+     ========================================================== */
+
+  --font-family: 'League Spartan', sans-serif;
+
+
+  /* =========================================================
+     TYPOGRAPHY
+     ========================================================== */
+
+  /* ---------------------------------------------------------
+     Text Preset 1
+     League Spartan Light
+     80px / 100%
+     Letter spacing: -1px
+     --------------------------------------------------------- */
+
+  --font-1: 300 80px / 100% var(--font-family);
+  --font-1-letter-spacing: -1px;
+
+
+  /* ---------------------------------------------------------
+     Text Preset 2
+     League Spartan Bold
+     48px / 133%
+     Letter spacing: -0.6px
+     --------------------------------------------------------- */
+
+  --font-2: 700 48px / 133% var(--font-family);
+  --font-2-letter-spacing: -0.6px;
+
+
+  /* ---------------------------------------------------------
+     Text Preset 3
+     League Spartan Bold
+     32px / 125%
+     Letter spacing: -0.4px
+     --------------------------------------------------------- */
+
+  --font-3: 700 32px / 125% var(--font-family);
+  --font-3-letter-spacing: -0.4px;
+
+
+  /* ---------------------------------------------------------
+     Text Preset 3 Light
+     League Spartan Light
+     32px / 125%
+     Letter spacing: -0.4px
+     --------------------------------------------------------- */
+
+  --font-3-light: 300 32px / 125% var(--font-family);
+  --font-3-light-letter-spacing: -0.4px;
+
+
+  /* ---------------------------------------------------------
+     Text Preset 4 Bold
+     League Spartan Bold
+     20px / 120%
+     Letter spacing: -0.25px
+     --------------------------------------------------------- */
+
+  --font-4: 700 20px / 120% var(--font-family);
+  --font-4-letter-spacing: -0.25px;
+
+
+  /* ---------------------------------------------------------
+     Text Preset 4 Regular
+     League Spartan Regular
+     20px / 150%
+     Letter spacing: 0
+     --------------------------------------------------------- */
+
+  --font-4-regular: 400 20px / 150% var(--font-family);
+  --font-4-regular-letter-spacing: 0;
+
+
+  /* ---------------------------------------------------------
+     Text Preset 5
+     League Spartan SemiBold
+     17px / 95%
+     Letter spacing: 2.5px
+     --------------------------------------------------------- */
+
+  --font-5: 600 17px / 95% var(--font-family);
+  --font-5-letter-spacing: 2.5px;
+
+
+  /* ---------------------------------------------------------
+     Text Preset 6
+     League Spartan Regular
+     16px / 162.5%
+     Letter spacing: 0
+     --------------------------------------------------------- */
+
+  --font-6: 400 16px / 162.5% var(--font-family);
+  --font-6-letter-spacing: 0;
+
+
+  /* ---------------------------------------------------------
+     Text Preset 7
+     League Spartan Regular
+     14px / 200%
+     Letter spacing: 2px
+     --------------------------------------------------------- */
+
+  --font-7: 400 14px / 200% var(--font-family);
+  --font-7-letter-spacing: 2px;
+
+
+  /* ---------------------------------------------------------
+     Text Preset 8
+     League Spartan Regular
+     10px / 100%
+     Letter spacing: -0.2px
+     --------------------------------------------------------- */
+
+  --font-8: 400 10px / 100% var(--font-family);
+  --font-8-letter-spacing: -0.2px;
+
+
+  /* =========================================================
+     SPACING
+     ========================================================== */
+
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.375rem;  /* 6px */
+  --space-3: 0.5rem;    /* 8px */
+  --space-4: 0.625rem;  /* 10px */
+  --space-5: 1rem;      /* 16px */
+  --space-6: 1.25rem;   /* 20px */
+  --space-7: 1.5rem;    /* 24px */
+  --space-8: 1.875rem;  /* 30px */
+  --space-9: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-11: 3rem;     /* 48px */
+  --space-12: 3.75rem;  /* 60px */
+  --space-13: 4rem;     /* 64px */
+  --space-14: 4.5rem;   /* 72px */
+  --space-15: 5rem;     /* 80px */
+  --space-16: 6rem;     /* 96px */
+  --space-18: 7rem;     /* 112px */
+  --space-20: 8rem;     /* 128px */
+  --space-22: 9rem;     /* 144px */
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1024px) {
+  :root {
+
+    /* Text Preset 1 */
+    --font-1: 300 64px / 100% var(--font-family);
+
+    /* Text Preset 2 */
+    --font-2: 700 40px / 133% var(--font-family);
+
+    /* Text Preset 3 */
+    --font-3: 700 30px / 125% var(--font-family);
+
+    /* Text Preset 3 Light */
+    --font-3-light: 300 30px / 125% var(--font-family);
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+  :root {
+
+    /* Text Preset 1 */
+    --font-1: 300 48px / 100% var(--font-family);
+
+    /* Text Preset 2 */
+    --font-2: 700 36px / 133% var(--font-family);
+
+    /* Text Preset 3 */
+    --font-3: 700 28px / 125% var(--font-family);
+
+    /* Text Preset 3 Light */
+    --font-3-light: 300 28px / 125% var(--font-family);
+  }
+}
