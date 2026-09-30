@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap");
 :root {
   /* =========================================================
      COLORS
@@ -25,7 +26,6 @@
      STONE
      --------------------------------------------------------- */
   --stone-500: hsl(27, 22%, 51%);
-  @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap");
   /* =========================================================
      COLORS
      ========================================================== */
@@ -415,20 +415,33 @@ select {
 
 body {
   color: var(--neutral-0);
-  font-family: "League Spartan", sans-serif;
+  font-family: var(--font-family);
 }
 
 .hero__section {
-  display: flex;
-  position: relative;
+  display: grid;
   height: 100vh;
-  flex-direction: column;
-  align-items: center;
 }
 .hero__section .hero__content {
+  place-self: center;
   text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+}
+.hero__section .hero__content .hero__title {
+  font: var(--font-1);
+  letter-spacing: var(--font-1-letter-spacing);
+  margin-bottom: 1rem;
+}
+.hero__section .hero__content .hero__description {
+  font: var(--font-3-light);
+  letter-spacing: var(--font-3-letter-spacing);
+  margin-bottom: 1rem;
+}
+.hero__section .hero__content .hero__text {
+  font: var(--font-6);
+  letter-spacing: var(--font-6-letter-spacing);
+  margin-bottom: 1rem;
+}
+.hero__section .hero__content,
+.hero__section .image__hero {
+  grid-area: 1/1;
 }/*# sourceMappingURL=index.css.map */

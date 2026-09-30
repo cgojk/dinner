@@ -14,21 +14,42 @@
 
 body{
     color:var(--neutral-0);
-    font-family: 'League Spartan', sans-serif;
+    font-family: var(--font-family);
 }
 
 
 .hero__section{
-    display:flex;
-    position:relative;
+    display:grid;
+    
     height:100vh;
-    flex-direction: column;
-    align-items: center;
-    .hero__content{
+   
+  
+    
+       
+       .hero__content{
+      place-self: center;
         text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+
+        .hero__title{
+            
+            
+            font:var(--font-1);
+            letter-spacing: var(--font-1-letter-spacing);
+            margin-bottom: 1rem;
+        }
+        .hero__description{
+            font:var(--font-3-light);
+            letter-spacing: var(--font-3-letter-spacing);
+            margin-bottom: 1rem;
+        }
+        .hero__text{
+            font:var(--font-6);
+            letter-spacing: var(--font-6-letter-spacing);
+            margin-bottom: 1rem;
+        }
+    }
+    .hero__content,
+    .image__hero{
+        grid-area: 1/1;
     }
 }
