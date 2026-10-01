@@ -42,6 +42,7 @@ export default function Hero(){
    <div className="hero__content">
     <h1 className="hero__title">dine</h1>
     <h2 className="hero__description">Exquisite dining since 1989</h2>
+      
     <p className="hero__text">Experience our seasonal menu in beautiful country surroundings.  Eat the freshest produce form the comfort of our farmhouse.</p>
 
     <HeroButton to="/booking" />

@@ -423,8 +423,8 @@ body {
   height: 100vh;
 }
 .hero__section .hero__content {
-  place-self: center;
   text-align: center;
+  transform: translateY(5rem);
 }
 .hero__section .hero__content .hero__title {
   font: var(--font-1);
