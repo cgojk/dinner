@@ -15,11 +15,13 @@
 body{
     color:var(--neutral-0);
     font-family: var(--font-family);
+    
 }
 
 
 .hero__section{
     display:grid;
+    background-color: var(--neutral-950);
     
     height:100vh;
    
@@ -29,7 +31,9 @@ body{
        .hero__content{
     //   place-self: center;
         text-align: center;
-        transform: translateY(5rem);
+        background-color: var(--neutral-950);
+        transform: translateY(12rem);
+        padding:var(--space-6);
 
         .hero__title{
             
@@ -37,12 +41,18 @@ body{
             font:var(--font-1);
             letter-spacing: var(--font-1-letter-spacing);
             margin-bottom: 1rem;
+           
+            
         }
         .hero__description{
             font:var(--font-3-light);
             letter-spacing: var(--font-3-letter-spacing);
             margin-bottom: 1rem;
-            // width: 260px;
+            margin-inline: auto;
+            text-align: center;
+
+             max-inline-size: 60%;
+         
         }
         .hero__text{
             font:var(--font-6);
@@ -54,4 +64,89 @@ body{
     .image__hero{
         grid-area: 1/1;
     }
+}
+
+
+// ======button styles======================================
+// ========================================================
+
+// .button__container{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin-top: 2rem;
+//     text-decoration: none;
+//     text-transform: uppercase;
+//     font: var(--font-5);
+//     padding: var(--space-6) var(--space-6);
+//     position: relative;
+//     overflow: hidden;
+//     background-color: transparent;
+//     color: var(--neutral-0);
+//     border: 1px solid var(--neutral-0);
+
+//     &::before {
+//     content: "";
+//     position: absolute;
+//     inset: 0;
+//     background-color: var(--neutral-0);
+//     transform: scaleX(0);
+//     transform-origin: left;
+//     transition: transform 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+//     z-index: 0;
+//     }
+
+//   &:hover::before {
+//     transform: scaleX(1);
+   
+    
+   
+
+// }
+//   &:hover {
+//     color: var(--neutral-950);
+//   }
+// }
+
+
+.button__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font: var(--font-5);
+  padding: var(--space-6) var(--space-6);
+  position: relative;
+  overflow: hidden;
+
+  background-color: transparent;
+  color: var(--neutral-0);
+  border: 1px solid var(--neutral-0);
+
+  // Important
+  isolation: isolate;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-color: var(--neutral-0);
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+
+    z-index: -1;
+  }
+
+  &:hover {
+    color: var(--neutral-950);
+  }
+
+  &:hover::before {
+    transform: scaleX(1);
+  }
 }

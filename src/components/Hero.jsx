@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
-import HeroButton from "./HeroButton";
+import Button from "./Button";
+import { Link } from "react-router-dom";
 
 
 import imagemobile from "../images/homepage/hero-bg-mobile.jpg";
@@ -44,8 +45,12 @@ export default function Hero(){
     <h2 className="hero__description">Exquisite dining since 1989</h2>
       
     <p className="hero__text">Experience our seasonal menu in beautiful country surroundings.  Eat the freshest produce form the comfort of our farmhouse.</p>
-
-    <HeroButton to="/booking" />
+     <Button
+          to="/booking"
+          className="button__container"
+        >
+          Book a Table
+        </Button>
    </div>      
     
        
