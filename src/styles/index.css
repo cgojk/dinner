@@ -421,13 +421,13 @@ body {
 .hero__section {
   display: grid;
   background-color: var(--neutral-950);
-  height: 100vh;
 }
 .hero__section .hero__content {
   text-align: center;
   background-color: var(--neutral-950);
-  transform: translateY(12rem);
+  transform: translateY(10rem);
   padding: var(--space-6);
+  height: 55vh;
 }
 .hero__section .hero__content .hero__title {
   font: var(--font-1);
@@ -450,6 +450,34 @@ body {
 .hero__section .hero__content,
 .hero__section .image__hero {
   grid-area: 1/1;
+}
+
+.info__section {
+  margin-top: 0;
+  padding: var(--space-6) 0;
+}
+.info__section .image__info {
+  padding: 0 var(--space-2);
+}
+
+.info__content {
+  text-align: center;
+  margin-top: 2rem;
+  padding: var(--space-6);
+  color: var(--neutral-950);
+  background-color: var(--neutral-0);
+}
+.info__content .info__title {
+  font: var(--font-3);
+  letter-spacing: var(--font-3-letter-spacing);
+  margin-bottom: 1rem;
+}
+.info__content .info__text {
+  font: var(--font-6);
+  letter-spacing: var(--font-6-letter-spacing);
+  margin-bottom: 1rem;
+  margin-inline: auto;
+  text-align: center;
 }
 
 .button__container {

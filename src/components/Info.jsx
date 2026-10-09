@@ -43,10 +43,11 @@ export default function Info(){
     
      
 
-    <img src={pattern} alt="pattern" className="pattern__info" />
-
+   
  
    <div className="info__content">
+     <img src={pattern} alt="pattern" className="pattern__info" />
+
     <h1 className="info__title">Enjoyabe place for all the family</h1>
   
       
