@@ -7,6 +7,8 @@ import imagemobile from "../images/homepage/enjoyable-place-mobile.jpg";
 import imagetablet from "../images/homepage/enjoyable-place-tablet.jpg";
 import imagedesktop from "../images/homepage/enjoyable-place-desktop.jpg";
 
+import image2mobileh from 
+
 import pattern from "../images/patterns/pattern-divide.svg";
 
 
@@ -57,6 +59,8 @@ export default function Info(){
     
        
 </section>
+
+
 
   );
 }
