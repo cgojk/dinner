@@ -27,6 +27,7 @@ export default function Info(){
       
 
             <div className="image__info">
+               
                 <picture className="image__info">
                         <source
                             media="(min-width: 1024px)"

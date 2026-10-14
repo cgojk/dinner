@@ -73,11 +73,50 @@ body{
 .info__section{
     margin-top:0;
     padding: var(--space-6) 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+
+ 
 
     .image__info{
         padding:0 var(--space-2);
+         position: relative;
+         
+
+          
+ &::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color:var(--neutral-100);
+  opacity: 0.5;
+    bottom: -15px;
+  left:50%;
+  z-index: 0;
+  transform: translateX(-50%);
+}
+
+img{
+     position: relative;
+  z-index: 1;
+
+  }
+
+ 
+
+
+
+
+
+
     }
 }
+
+
+
 
 .info__content{
     text-align: center;
@@ -85,6 +124,10 @@ body{
     padding: var(--space-6);
     color:var(--neutral-950);
     background-color: var(--neutral-0);
+    flex-direction:flex;
+    justify-content: center;
+   
+   
     
     .info__title{
         font:var(--font-3);
