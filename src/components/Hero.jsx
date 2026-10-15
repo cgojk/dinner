@@ -17,7 +17,7 @@ export default function Hero(){
       
 
             <div className="image__hero">
-                <picture className="image__hero">
+                <picture>
                         <source
                             media="(min-width: 1024px)"
                             srcSet={imagedesktop}
