@@ -1,71 +1,80 @@
-import React, { useRef, useEffect } from "react";
 
-import { Link } from "react-router-dom";
-
-
-
-// import imagemobile from "../images/homepage/enjoyable-place-mobile.jpg";
-// import imagetablet from "../images/homepage/enjoyable-place-tablet.jpg";
-// import imagedesktop from "../images/homepage/enjoyable-place-desktop.jpg";
-
-// import image2mobile from "../images/homepage/locally-sourced-mobile.jpg";
-// import image2tablet from "../images/homepage/locally-sourced-tablet.jpg";
-// import image2desktop from "../images/homepage/locally-sourced-desktop.jpg";
-
-
+import React from "react";
 import InfoText from "../InfoText";
-
 import pattern from "../images/patterns/pattern-divide.svg";
-
-
-
-
-
 
 export default function Info() {
   return (
-    <section className="info__section">
-      <ul className="info__list">
-        {InfoText.map((info) => (
-          <li key={info.id} className="info__item">
+    <>
+      {/* First section: white background */}
+      <section className="info__section info__section--light">
+        <ul className="info__list">
+          {InfoText.filter((info) => info.id === 1 || info.id === 2).map((info) => (
+            <li key={info.id} className="info__item">
+              <picture className="image__info">
+                <source
+                  media="(min-width: 1024px)"
+                  srcSet={info.imageDesktop}
+                />
 
-            <picture className="image__info">
-              <source
-                media="(min-width: 1024px)"
-                srcSet={info.imageDesktop}
-              />
+                <source
+                  media="(min-width: 710px)"
+                  srcSet={info.imageTablet}
+                />
 
-              <source
-                media="(min-width: 710px)"
-                srcSet={info.imageTablet}
-              />
+                <img
+                  src={info.imageMobile}
+                  alt={info.alt}
+                  className="image__info"
+                />
+              </picture>
 
-              <img
-                src={info.imageMobile}
-                alt={info.alt}
-                className="image__info"
-              />
-            </picture>
+              <div className="info__content">
+                <img src={pattern} alt="" className="pattern__info" />
 
-            <div className="info__content">
-              <img
-                src={pattern}
-                alt=""
-                className="pattern__info"
-              />
+                <h2 className="info__title">{info.title}</h2>
 
-              <h2 className="info__title">
-                {info.title}
-              </h2>
+                <p className="info__text">{info.description}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </section>
 
-              <p className="info__text">
-                {info.description}
-              </p>
-            </div>
+      {/* Second section: black background */}
+      <section className="info__section info__section--dark">
+        <ul className="info__list">
+          {InfoText.filter((info) => [3, 4, 5].includes(info.id)).map((info) => (
+            <li key={info.id} className="info__item">
+              <picture className="image__info">
+                <source
+                  media="(min-width: 1024px)"
+                  srcSet={info.imageDesktop}
+                />
 
-          </li>
-        ))}
-      </ul>
-    </section>
+                <source
+                  media="(min-width: 710px)"
+                  srcSet={info.imageTablet}
+                />
+
+                <img
+                  src={info.imageMobile}
+                  alt={info.alt}
+                  className="image__info"
+                />
+              </picture>
+
+              <div className="info__content">
+                <img src={pattern} alt="" className="pattern__info" />
+
+                <h2 className="info__title">{info.title}</h2>
+
+                <p className="info__text">{info.description}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </section>
+    </>
   );
 }

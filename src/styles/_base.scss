@@ -20,19 +20,15 @@ body{
 
 
 .hero__section{
-    display:grid;
-    background-color: var(--neutral-950);
-    min-height: 50vh;
-  overflow: hidden;
+display:grid;
+background-color: var(--neutral-950);
+min-height: 50vh;
+overflow: hidden;
     
-    // height:100vh;
-   
-  
-    
+
        
-       .hero__content{
-    //   place-self: center;
-        position: relative;
+ .hero__content{
+  position: relative;
   z-index: 1;
   align-self: center;
   justify-self: center;
@@ -43,9 +39,8 @@ body{
   transform: none;
   max-width: 600px;
 
-        .hero__title{
-            
-            
+.hero__title{
+
             font:var(--font-1);
             letter-spacing: var(--font-1-letter-spacing);
             margin-bottom: 1rem;
@@ -98,7 +93,11 @@ body{
     flex-direction: column;
   justify-content: center;
 
- 
+   .info__list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+   }
 
     .image__info{
         padding:0 var(--space-2);
@@ -109,47 +108,55 @@ body{
  &::before {
   content: "";
   position: absolute;
-  width: 50%;
+ width: 80%;
   height: 100%;
-  background-color:var(--neutral-100);
-  opacity: 0.5;
-    bottom: -15px;
-  left:50%;
+  background-color: hsl(0, 2%, 41%);
+  opacity: 0.6;
+  bottom: -35px;
+  left: 50%;
   z-index: 0;
   transform: translateX(-50%);
+  filter: blur(25px);
+  border-radius: 50%;
 }
 
 img{
      position: relative;
-  z-index: 1;
+    z-index: 1;
 
-  }
-
- 
-
-
-
-
-
-
+    }
     }
 }
 
 
+.info__section--light {
+  background-color:var(--neutral-0);
+  color: var(--neutral-950);
+}
 
+/* Second section: black */
+.info__section--dark {
+  background-color:var(--neutral-950);
+  color: var(--neutral-0);
+}
+
+/* White text on the black section */
+.info__section--dark .info__title,
+.info__section--dark .info__text {
+  color: var(--neutral-0);
+}
 
 .info__content{
     text-align: center;
     margin-top: 2rem;
     padding: var(--space-6);
     color:var(--neutral-950);
-    background-color: var(--neutral-0);
     flex-direction:flex;
     justify-content: center;
     display: flex;
     flex-direction: column;
    
-   .patterns{
+   .pattern__info{
     align-self: center;
     margin-bottom: 2rem;
    }
@@ -165,9 +172,7 @@ img{
         margin-bottom: 1rem;
         margin-inline: auto;
         text-align: center;
-
-        //  max-inline-size: 60%;
-     
+         
     }
 }
 
@@ -207,4 +212,22 @@ img{
   &:hover::before {
     transform: scaleX(1);
   }
+
+
+}
+
+.button__container{
+&.button--dark {
+  background-color: var(--neutral-950);
+  color: var(--neutral-0);
+  border: 1px solid var(--neutral-950);
+
+  &::before {
+    background-color: var(--neutral-0);
+  }
+
+  &:hover {
+    color: var(--neutral-950);
+  }
+}
 }
