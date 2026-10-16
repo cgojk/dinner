@@ -3,6 +3,7 @@ import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 
+
 // import imagemobile from "../images/homepage/enjoyable-place-mobile.jpg";
 // import imagetablet from "../images/homepage/enjoyable-place-tablet.jpg";
 // import imagedesktop from "../images/homepage/enjoyable-place-desktop.jpg";
