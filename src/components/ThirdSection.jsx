@@ -29,6 +29,11 @@ export default function ThirdSection() {
                   className="image__info"
                 />
               </picture>
+              <ul className="menu__list">
+                <li className="menu__item">Family Gethering</li>
+                <li className="menu__item">Special Events</li>
+                <li className="menu__item">Social Events</li>
+              </ul>
 
               <div className="info__content">
              
