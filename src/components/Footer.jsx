@@ -39,14 +39,21 @@ export default function Footer() {
 
             <Button
                      to="/booking"
-                     className="button__container"
+                     className="button__footer"
                    >
                      Book a Table
                    </Button>
               </div>
         
      
-     
+     <div className="footer__text">
+        <h1 className="footer__title">Dine</h1>
+        <p>Morthwaite, Sedbergh Cumbria </p>
+        <p>+44 123 4567 890</p>
+        <p>OPEN TIMES</p>
+        <p>Mon - Fri: 09:00 AM - 10:00 PM</p>
+        <p>Sat - Sun: 09:00 AM - 11:00 PM</p>
+     </div>
       </section>
 </>
   );
