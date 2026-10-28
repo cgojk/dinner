@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <>
       {/* First section: white background */}
-      <section className="info__section info__section--light">
+      <section className=" info__section--footer">
       
               <picture className="image__info">
                 <source
@@ -36,16 +36,18 @@ export default function Footer() {
               
 
                 <h2 className="info__title">Ready to make a reservation?</h2>
-
-            <Button
-                     to="/booking"
-                     className="button__footer"
-                   >
-                     Book a Table
-                   </Button>
+ <Button
+                         to="/booking"
+                        
+                         variant="light"
+                          className="button__container"
+                       >
+                         Book a Table
+                </Button>
+     
+           
               </div>
         
-     
      <div className="footer__text">
         <h1 className="footer__title">Dine</h1>
         <p>Morthwaite, Sedbergh Cumbria </p>
