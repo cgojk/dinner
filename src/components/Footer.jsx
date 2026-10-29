@@ -35,7 +35,8 @@ export default function Footer() {
               <div className="info__content">
               
 
-                <h2 className="info__title">Ready to make a reservation?</h2>
+                <h2 className="info__title">Ready to make a </h2>
+                  <h2 className="info__title">reservation?</h2>
  <Button
                          to="/booking"
                         
@@ -49,7 +50,7 @@ export default function Footer() {
               </div>
         
      <div className="footer__text">
-        <h1 className="footer__title">Dine</h1>
+        <h1 className="footer__title">dine</h1>
         <p>Morthwaite, Sedbergh Cumbria </p>
         <p>+44 123 4567 890</p>
         <p>OPEN TIMES</p>
