@@ -237,6 +237,9 @@ img{
 
 
 .info__section--light{
+    display:flex;
+  flex-direction: column;
+  align-items: center;
   .info__content{
     .info__title{
       color:var(--neutral-950);
@@ -246,6 +249,7 @@ img{
 .menu__list {
   list-style: none;
   margin: 0;
+
   display: inline-block;
   width: fit-content;
   padding: var(--space-6) var(--space-4);
@@ -267,12 +271,12 @@ img{
   &::after {
     content: "";
     position: absolute;
-    left: 0;
+    left: 70px;
     bottom: 8px;
-    width: 100%;
+    width: 30%;
     height: 2px;
     background-color: var(--stone-500);
-    transform: scaleX(0);
+   transform: translateX(-50%) scaleX(0);
     transform-origin: left;
     transition: transform 0.3s ease;
   }
@@ -281,7 +285,7 @@ img{
     color: var(--stone-500);
 
     &::after {
-      transform: scaleX(1);
+       transform: translateX(-50%) scaleX(1);
     }
   }
 }

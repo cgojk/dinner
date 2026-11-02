@@ -8,9 +8,8 @@ export default function ThirdSection() {
   return (
     <>
       {/* First section: white background */}
-      <section className="info__section info__section--light">
-        <ul className="info__list">
-            <li className="info__item">
+      <section className="info__section--light">
+        
            
               <picture className="image__info">
                 <source
@@ -30,7 +29,7 @@ export default function ThirdSection() {
                 />
               </picture>
               <ul className="menu__list">
-                <li className="menu__item">Family Gethering</li>
+                <li className="menu__item">Family Gathering</li>
                 <li className="menu__item">Special Events</li>
                 <li className="menu__item">Social Events</li>
               </ul>
@@ -41,9 +40,9 @@ export default function ThirdSection() {
 
                 <p className="info__text">We love for entire families. So please bring everyone along for a special meal with your loved ones. We'll provide a memorable experience for all.</p>
               </div>
-            </li>
+         
    
-        </ul>
+      
         <Button
                  to="/booking"
                 
