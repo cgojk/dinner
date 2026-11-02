@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <>
       {/* First section: white background */}
-      <section className=" info__section--footer">
+      <section className="info__section--footer">
       
               <picture className="image__info">
                 <source
@@ -51,14 +51,21 @@ export default function Footer() {
               </div>
         
      <div className="footer__text">
-      <img src={logo} alt="logo" className="footer__logo"/>
+      <div className="logo__section">
+        <img src={logo} alt="logo" className="footer__logo"/>
+      </div>
+      <div className="address__section">
         <p>Morthwaite, Sedbergh Cumbria </p>
         <p>+44 123 4567 890</p>
+      </div>
+      .open__section
         <p>OPEN TIMES</p>
         <p>Mon - Fri: 09:00 AM - 10:00 PM</p>
         <p>Sat - Sun: 09:00 AM - 11:00 PM</p>
      </div>
       </section>
+        
+  
 </>
   );
       

@@ -8,7 +8,7 @@ export default function Layout() {
    
 
     return (
-       
+       <>
     <div className="layout">
    
       <main className="main-content">
@@ -17,6 +17,7 @@ export default function Layout() {
       <Footer/>
 
     </div>
-
+    <p>Coded by Catalina Gojkovic</p>
+</>
     )
 }
