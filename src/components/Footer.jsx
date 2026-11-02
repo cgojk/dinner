@@ -4,6 +4,7 @@ import readydesktop from "../images/homepage/ready-bg-desktop.jpg";
 import readytablet from "../images/homepage/ready-bg-tablet.jpg";
 import readymobile from "../images/homepage/ready-bg-mobile.jpg";
 import Button from "./Button";
+import logo from "../images/logo.svg";
 
 
 
@@ -50,7 +51,7 @@ export default function Footer() {
               </div>
         
      <div className="footer__text">
-        <h1 className="footer__title">dine</h1>
+      <img src={logo} alt="logo" className="footer__logo"/>
         <p>Morthwaite, Sedbergh Cumbria </p>
         <p>+44 123 4567 890</p>
         <p>OPEN TIMES</p>

@@ -25,7 +25,7 @@ export default function ThirdSection() {
                 <img
                   src={familygatteringmobile}
                   alt="Family Gathering"
-                  className="image__info"
+                  className="image__info--light"
                 />
               </picture>
               <ul className="menu__list">
@@ -34,7 +34,7 @@ export default function ThirdSection() {
                 <li className="menu__item">Social Events</li>
               </ul>
 
-              <div className="info__content">
+              <div className="info__content--light">
              
                 <h2 className="info__title">Family Gathering</h2>
 

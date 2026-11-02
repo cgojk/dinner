@@ -5,10 +5,7 @@ import Footer from "../components/Footer";
 
 
 export default function Layout() {
-//   const location = useLocation();
-
-//   const footerVariant =
-//     location.pathname === "/location" ? "location" : "home";
+   
 
     return (
        
