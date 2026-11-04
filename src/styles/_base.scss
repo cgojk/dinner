@@ -100,7 +100,7 @@ overflow: hidden;
 
 
 .info__section{
-    margin-top:0;
+    margin-top:-150px;
     padding: var(--space-6) 0;
     position: relative;
     display: flex;
@@ -150,7 +150,7 @@ img{
   .info__item:first-child
 
    {
-    .inage__info{
+    .image__info{
     margin-top:-50px;
   }
 }
@@ -250,7 +250,7 @@ img{
   background-color: var(--neutral-950);
   color: var(--neutral-0);
   border: 1px solid var(--neutral-950);
-  margin-bottom:var(--space-6);
+  margin-bottom:var(--space-10);
 
   &::before {
     background-color: var(--neutral-0);
@@ -282,6 +282,8 @@ img{
     }
     .info__text{
      max-width:450px;
+    
+     text-align: center;
     }
   }
 }
@@ -407,5 +409,15 @@ img{
   .footer__logo{
     margin-bottom: var(--space-4);
   }
+
+}
+
+.footer-text--copyright{
+  color: var(--neutral-0);
+  
+  text-align:center;
+  
+  font:var(--font-7);
+ 
 
 }

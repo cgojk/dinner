@@ -7,7 +7,7 @@ import imagedesktop2 from "./images/homepage/locally-sourced-desktop.jpg";
 import imagemobile3 from "./images/homepage/salmon-mobile.jpg";
 import imagetablet3 from "./images/homepage/salmon-desktop-tablet.jpg";
 import imagedesktop3 from "./images/homepage/salmon-desktop-tablet.jpg";
-import pattern from "./images/patterns/pattern-divide.svg";
+
 import image4mobile from "./images/homepage/beef-mobile.jpg";
 import image4tablet from "./images/homepage/beef-desktop-tablet.jpg";
 import image4desktop from "./images/homepage/beef-desktop-tablet.jpg";
@@ -21,7 +21,7 @@ export default[
         id: 1,
         title: "Enjoyable Place",
         alt: "Enjoyable Place",
-        description: "Our relaxed surroudnigns make dining with us a great experience for everyone.  We can even arragne a tour of the famr before your meal.",
+        description: "Our relaxed surroudnigfffns make dining with us a great experience for everyone.  We can even arragne a tour of the famr before your meal.",
         imageMobile: imagemobile1,
         imageTablet: imagetablet1,
         imageDesktop: imagedesktop1
