@@ -11,7 +11,7 @@ export default function Info() {
         <ul className="info__list">
           {InfoText.filter((info) => info.id === 1 || info.id === 2).map((info) => (
             <li key={info.id} className="info__item">
-              <picture className="image__info">
+              <picture className="image__info--container">
                 <source
                   media="(min-width: 1024px)"
                   srcSet={info.imageDesktop}

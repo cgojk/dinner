@@ -13,7 +13,7 @@ export default function Hero(){
    
       
 
-            <div className="image__hero">
+            <div className="image__hero--container">
                 <picture>
                         <source
                             media="(min-width: 1024px)"

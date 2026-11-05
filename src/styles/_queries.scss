@@ -1,0 +1,25 @@
+
+@media only screen and (min-width: 768px) {
+
+
+
+     .info__section--light {
+        z-index: 2;
+
+        .info__item:first-child {
+
+            .image__info--container {
+                transform: translateY(clamp(-180px, -12vw, -80px));
+            }
+        }
+    }
+
+  .hero__section {
+    min-height: 70vh;
+
+    .hero__content {
+       
+        max-width: 700px;
+    }
+  }
+}
