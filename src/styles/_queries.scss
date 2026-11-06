@@ -3,23 +3,23 @@
 
 
 
-     .info__section--light {
-        z-index: 2;
+//      .info__section--light {
+//         z-index: 2;
 
-        .info__item:first-child {
+//         .info__item:first-child {
 
-            .image__info--container {
-                transform: translateY(clamp(-180px, -12vw, -80px));
-            }
-        }
-    }
+//             .image__info--container {
+//                 transform: translateY(clamp(-180px, -12vw, -80px));
+//             }
+//         }
+//     }
 
-  .hero__section {
-    min-height: 70vh;
+//   .hero__section {
+//     min-height: 70vh;
 
-    .hero__content {
+//     .hero__content {
        
-        max-width: 700px;
-    }
-  }
+//         max-width: 700px;
+//     }
+//   }
 }

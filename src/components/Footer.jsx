@@ -58,10 +58,12 @@ export default function Footer() {
         <p>Morthwaite, Sedbergh Cumbria </p>
         <p>+44 123 4567 890</p>
       </div>
-      .open__section
+      <div className="open__section">
+      
         <p>OPEN TIMES</p>
         <p>Mon - Fri: 09:00 AM - 10:00 PM</p>
         <p>Sat - Sun: 09:00 AM - 11:00 PM</p>
+     </div>
      </div>
       </section>
         
