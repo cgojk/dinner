@@ -2,8 +2,8 @@ import React, { useRef, useEffect } from "react";
 import Button from "./Button";
 import { Link } from "react-router-dom";
 import imagemobile from "../images/homepage/hero-bg-mobile@2x.jpg";
-import imagetablet from "../images/homepage/hero-bg-tablet.jpg";
-import imagedesktop from "../images/homepage/hero-bg-desktop.jpg";
+import imagetablet from "../images/homepage/hero-bg-tablet@2x.jpg";
+import imagedesktop from "../images/homepage/hero-bg-desktop@2x.jpg";
 import logo from "../images/logo.svg";
 
 
