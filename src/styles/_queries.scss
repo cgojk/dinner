@@ -1,38 +1,58 @@
-
 @media only screen and (min-width: 600px) {
 
+  .info__section--light {
+    z-index: 2;
 
-
-     .info__section--light {
-        z-index: 2;
-
-        .info__item:first-child {
-
-            .image__info--container {
-                transform: translateY(clamp(-180px, -12vw, -80px));
-            }
-        }
+    .info__item:first-child {
+      .image__info--container {
+        transform: translateY(clamp(-180px, -12vw, -80px));
+      }
     }
 
-  
+    .info__list {
+      .info__item {
+        .image__info--container {
 
-.info__section--light{
-    .info__list{
-        .info__item{
-            .image__info--container
-            .image__info
-            {
-                //  display: block;
-                width:100%;
-                 
-    max-width: 600px;
-    aspect-ratio: 600 / 360;
+          &::before {
+            content: "";
+            position: absolute;
 
-            }
+            width: 80%;
+            height: 100%;
+
+            background-image: url("../images/patterns/pattern-curve-bottom-right.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            bottom: -35px;
+            left: 50%;
+
+            z-index: 0;
+            filter: none;
+
+            transform: translateX(-50%);
+
+            border-radius: 0 30% 0 0;
+          }
+
+          .image__info {
+            position: relative;
+            z-index: 1;
+
+            width: 100%;
+            max-width: 600px;
+            aspect-ratio: 600 / 360;
+          }
         }
+      }
     }
+  }
 }
-}
+
+
+
+
 
 @media (min-width: 1200px) {
   .image__info {
