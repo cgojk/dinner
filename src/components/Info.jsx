@@ -13,19 +13,25 @@ export default function Info() {
             <li key={info.id} className="info__item">
               <picture className="image__info--container">
                 <source
-                  media="(min-width: 1024px)"
+                  media="(min-width: 1200px)"
                   srcSet={info.imageDesktop}
                 />
 
                 <source
-                  media="(min-width: 710px)"
+                  media="(min-width: 600px)"
                   srcSet={info.imageTablet}
+
                 />
 
                 <img
                   src={info.imageMobile}
                   alt={info.alt}
                   className="image__info"
+                 
+                width="327"
+                height="400"
+                loading="eager"
+                decoding="async"
                 />
               </picture>
 
@@ -46,7 +52,7 @@ export default function Info() {
         <ul className="info__list">
           {InfoText.filter((info) => [3, 4, 5].includes(info.id)).map((info) => (
             <li key={info.id} className="info__item">
-              <picture className="image__info">
+              <picture className="image__info--container">
                 <source
                   media="(min-width: 1024px)"
                   srcSet={info.imageDesktop}
@@ -61,6 +67,7 @@ export default function Info() {
                   src={info.imageMobile}
                   alt={info.alt}
                   className="image__info"
+                   loading="lazy"
                 />
               </picture>
 

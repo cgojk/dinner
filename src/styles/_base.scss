@@ -126,6 +126,8 @@ align-items:center;
     .image__info--container{
         padding:0 var(--space-5);
          position: relative;
+        
+
          
 
           
@@ -142,14 +144,21 @@ align-items:center;
   transform: translateX(-50%);
   filter: blur(25px);
   border-radius: 50%;
-}
+ }
 
-img{
+.image__info{
      position: relative;
     z-index: 1;
+    width: 100%;
+    max-width: 365px;
+    aspect-ratio: 365 / 400;
+    object-fit: cover;
+    margin-inline: auto;
+
  
 
     }
+
     }
 }
 
@@ -162,6 +171,10 @@ img{
 
     .image__info--container {
        transform: translateY(clamp(-80px, -12vw, -40px));
+
+       
+
+     
    }
   }
 

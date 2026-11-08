@@ -1,5 +1,5 @@
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
 
 
 
@@ -14,12 +14,29 @@
         }
     }
 
-//   .hero__section {
-//     min-height: 70vh;
+  
 
-//     .hero__content {
-       
-//         max-width: 700px;
-//     }
-//   }
+.info__section--light{
+    .info__list{
+        .info__item{
+            .image__info--container
+            .image__info
+            {
+                //  display: block;
+                width:100%;
+                 
+    max-width: 600px;
+    aspect-ratio: 600 / 360;
+
+            }
+        }
+    }
+}
+}
+
+@media (min-width: 1200px) {
+  .image__info {
+    max-width: 540px;
+    aspect-ratio: 540 / 400;
+  }
 }
