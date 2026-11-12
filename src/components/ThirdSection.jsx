@@ -8,7 +8,7 @@ export default function ThirdSection() {
   return (
     <>
       {/* First section: white background */}
-      <section className="info__section--light">
+      <section className="info__section--light_third">
         
            
               <picture className="image__info">

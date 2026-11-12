@@ -7,7 +7,7 @@ export default function Info() {
   return (
     <>
       {/* First section: white background */}
-      <section className="info__section info__section--light">
+      <section className="info__section--light">
         <ul className="info__list">
           {InfoText.filter((info) => info.id === 1 || info.id === 2).map((info) => (
             <li key={info.id} className="info__item">
@@ -48,7 +48,7 @@ export default function Info() {
       </section>
 
       {/* Second section: black background */}
-      <section className="info__section info__section--dark">
+      <section className="info__section--dark">
         <ul className="info__list">
           {InfoText.filter((info) => [3, 4, 5].includes(info.id)).map((info) => (
             <li key={info.id} className="info__item">

@@ -3,28 +3,32 @@
 
   .info__section--light {
     z-index: 2;
-    position:relative;
 
 
+    
 
 
+.info__list {
+     .info__item:first-child {
+        position:relative;
 
-    .info__item:first-child {
+      
       .image__info--container {
-        transform: translateY(clamp(-180px, -12vw, -80px));
+         transform: translateY(clamp(-180px, -12vw, -80px));
 
-          &::before {
+         
+   &::before {
             content: "";
             position: absolute;
 
             width: 80%;
-            height: 100%;
+            // height: 100%;
 
             background-image:url("../images/patterns/pattern-curve-bottom-right.svg");
             background-repeat: no-repeat;
-            background-size: cover;
+            // background-size: cover;
             background-position: center;
-            background-color:var(--neutral-0);
+         
             bottom: -35px;
             left:10px;
             top:150px;
@@ -32,88 +36,69 @@
             z-index: 0;
             filter: none;
 
-            transform: translateX(-50%);
+            // transform: translateX(-50%);
 
             border-radius: 0 30% 0 0;
+
           }
-      }
-    }
-
-
-    //  .info__item:last-child {
-    //   .image__info--container {
-     
-
-    //     &::before {
-    //       content: "";
-    //       position: absolute;
-    //       background-color:var(--neutral-0);
-    //       width: 80%;
-    //       height: 100%;
-    //       background-image: url("../images/patterns/pattern-curve-bottom-right.svg");
-    //       background-repeat: no-repeat;
-    //       background-size: contain;
-    //       background-position: center;
-
-    //       top: 150px;
-    //       left: 50%;
-    //       filter: none;
-
-    //       z-index: 0;
-    //       transform: translateX(-50%);
-    //     }
-    //   }
-    // }
-
-    .info__list {
-        position:relative;
-      .info__item {
-
-        .image__info--container {
-
-        
-
-          .image__info {
-            // position: relative;
-            z-index: 1;
+              .image__info {
+            //  position: relative;
+            z-index: 3;
 
             width: 100%;
             max-width: 600px;
             aspect-ratio: 600 / 360;
+   
+
+          }
+            
+         
           }
         }
-      }
-    }
-  }
- 
-    }
-  
-.info__section--light {
-    z-index: 2;
+      
+
+
+
+
+ .info__item:last-child {
     position:relative;
+     isolation: isolate;
 
-
+     .image__info--container{
 
         &::before {
           content: "";
           position: absolute;
          
           width: 80%;
-          height: 100%;
+        //   height: 100%;
           background-image: url("../images/patterns/pattern-curve-bottom-right.svg");
           background-repeat: no-repeat;
           background-size: contain;
           background-position: center;
+          background-color:var(--neutral-0);
 
           bottom: 50px;
           right: 50px;
           filter: none;
 
-          z-index: 0;
-        //   transform: translateX(-50%);
+         z-index: -1;
+       
         }
+   
+        
+    }
+        
+      }
+    }
+}
+ 
+    
+
 
     }
+
+ 
 
 
 
