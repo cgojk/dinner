@@ -1,46 +1,69 @@
  @media only screen and (min-width: 600px) {
 
+   .info__section--light {
 
-  .info__section--light {
-    z-index: 2;
+    .image__info--wrapper {
+  position: relative;
+  isolation: isolate;
+}
+
+.pattern {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    // width: 180px;
+    height: auto;
+    pointer-events: none;
+  }
+
+  /* First image */
+  .pattern--first {
+    top: -30px;
+    left: -30px;
+  }
+
+  /* Last image */
+  .pattern--last {
+    bottom: -30px;
+    right: -30px;
+  }
 
 
-    
+
+  .image__info--container {
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: hsl(0, 2%, 41%);
+    opacity: 0.6;
+    bottom: -35px;
+    left: 50%;
+    z-index: 0;
+    transform: translateX(-50%);
+    filter: blur(25px);
+    border-radius: none;
+  }
+  
+  }
+}
 
 
+
+    .info__section--light {
 .info__list {
      .info__item:first-child {
-        position:relative;
-
+      
       
       .image__info--container {
          transform: translateY(clamp(-180px, -12vw, -80px));
 
-         
-   &::before {
-            content: "";
-            position: absolute;
+      }
 
-            width: 80%;
-            // height: 100%;
 
-            background-image:url("../images/patterns/pattern-curve-bottom-right.svg");
-            background-repeat: no-repeat;
-            // background-size: cover;
-            background-position: center;
-         
-            bottom: -35px;
-            left:10px;
-            top:150px;
 
-            z-index: 0;
-            filter: none;
-
-            // transform: translateX(-50%);
-
-            border-radius: 0 30% 0 0;
-
-          }
               .image__info {
             //  position: relative;
             z-index: 3;
@@ -54,49 +77,27 @@
             
          
           }
+          .info__item:last-child{
+      
+              
+              .image__info {
+            //  position: relative;
+            z-index: 3;
+
+            width: 100%;
+            max-width: 600px;
+            aspect-ratio: 600 / 360;
+   
+
+          }
+          
+          }
         }
+      }
       
 
 
-
-
- .info__item:last-child {
-    position:relative;
-     isolation: isolate;
-
-     .image__info--container{
-
-        &::before {
-          content: "";
-          position: absolute;
-         
-          width: 80%;
-        //   height: 100%;
-          background-image: url("../images/patterns/pattern-curve-bottom-right.svg");
-          background-repeat: no-repeat;
-          background-size: contain;
-          background-position: center;
-          background-color:var(--neutral-0);
-
-          bottom: 50px;
-          right: 50px;
-          filter: none;
-
-         z-index: -1;
-       
-        }
-   
-        
-    }
-        
-      }
-    }
-}
- 
-    
-
-
-    }
+} 
 
  
 

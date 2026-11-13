@@ -2,6 +2,9 @@
 import React from "react";
 import InfoText from "../InfoText";
 import pattern from "../images/patterns/pattern-divide.svg";
+import patternfirst from "../images/patterns/pattern-curve-top-left.svg";
+import patternlast from "../images/patterns/pattern-curve-bottom-right.svg"
+
 
 export default function Info() {
   return (
@@ -11,41 +14,53 @@ export default function Info() {
         <ul className="info__list">
           {InfoText.filter((info) => info.id === 1 || info.id === 2).map((info) => (
             <li key={info.id} className="info__item">
+               {/* Image and decorative pattern */}
+          <div className="image__info--wrapper">
+
+          <img
+            src={info.id === 1 ? patternfirst : patternlast}
+            alt=""
+            aria-hidden="true"
+            className={`pattern ${
+              info.id === 1 ? "pattern--first" : "pattern--last"
+            }`}
+          />
               <picture className="image__info--container">
-                <source
-                  media="(min-width: 1200px)"
-                  srcSet={info.imageDesktop}
-                />
+            <source
+              media="(min-width: 1200px)"
+              srcSet={info.imageDesktop}
+            />
 
-                <source
-                  media="(min-width: 600px)"
-                  srcSet={info.imageTablet}
+            <source
+              media="(min-width: 600px)"
+              srcSet={info.imageTablet}
+            />
 
-                />
+            <img
+              src={info.imageMobile}
+              alt={info.alt}
+              className="image__info"
+              width="327"
+              height="400"
+              loading="eager"
+              decoding="async"
+            />
+          </picture>
 
-                <img
-                  src={info.imageMobile}
-                  alt={info.alt}
-                  className="image__info"
-                 
-                width="327"
-                height="400"
-                loading="eager"
-                decoding="async"
-                />
-              </picture>
+        </div>
+         <div className="info__content">
+          <h2 className="info__title">{info.title}</h2>
+          <p className="info__text">{info.description}</p>
+        </div>
 
-              <div className="info__content">
-                <img src={pattern} alt="" className="pattern__info" />
+  
 
-                <h2 className="info__title">{info.title}</h2>
-
-                <p className="info__text">{info.description}</p>
-              </div>
             </li>
           ))}
         </ul>
       </section>
+
+      
 
       {/* Second section: black background */}
       <section className="info__section--dark">
