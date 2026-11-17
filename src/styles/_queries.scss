@@ -1,11 +1,28 @@
  @media only screen and (min-width: 600px) {
 
-   .info__section--light {
+.info__section--light {
 
-    .image__info--wrapper {
+.image__info--wrapper {
   position: relative;
   isolation: isolate;
-}
+
+  .pattern__icon{
+    top:-150px;
+  }
+
+ .pattern__lines {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    width: 150px;
+    height: auto;
+
+    /* Adjust these to match your design */
+    bottom: 20px;
+    left: 70%;
+    pointer-events: none;
+  }
+
 
 .pattern {
     display: block;
@@ -18,17 +35,22 @@
 
   /* First image */
   .pattern--first {
-    top: -30px;
+    top: 50px;
     left: -30px;
+    width:50%;
+    height:80%;
   }
 
   /* Last image */
   .pattern--last {
-    bottom: -30px;
+    bottom: -150px;
     right: -30px;
+     width:50%;
+    height:80%;
   }
 
-
+}
+   }
 
   .image__info--container {
 
@@ -48,23 +70,20 @@
   }
   
   }
-}
 
 
 
-    .info__section--light {
-.info__list {
-     .info__item:first-child {
+
+.info__section--light {
+       .info__list {
+         .info__item:first-child {
       
-      
-      .image__info--container {
+        .image__info--container {
          transform: translateY(clamp(-180px, -12vw, -80px));
 
       }
 
-
-
-              .image__info {
+    .image__info {
             //  position: relative;
             z-index: 3;
 

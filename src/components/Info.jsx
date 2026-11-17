@@ -4,6 +4,8 @@ import InfoText from "../InfoText";
 import pattern from "../images/patterns/pattern-divide.svg";
 import patternfirst from "../images/patterns/pattern-curve-top-left.svg";
 import patternlast from "../images/patterns/pattern-curve-bottom-right.svg"
+import patternlines from "../images/patterns/pattern-lines.svg";
+
 
 
 export default function Info() {
@@ -16,7 +18,6 @@ export default function Info() {
             <li key={info.id} className="info__item">
                {/* Image and decorative pattern */}
           <div className="image__info--wrapper">
-
           <img
             src={info.id === 1 ? patternfirst : patternlast}
             alt=""
@@ -46,8 +47,23 @@ export default function Info() {
               decoding="async"
             />
           </picture>
+         <img
+    src={pattern}
+    alt=""
+    aria-hidden="true"
+    className="pattern__icon"
+  />
 
-        </div>
+          {info.id === 2 && (
+    <img
+      src={patternlines}
+      alt=""
+      aria-hidden="true"
+      className="pattern__lines"
+    />
+  )}
+
+     </div>
          <div className="info__content">
           <h2 className="info__title">{info.title}</h2>
           <p className="info__text">{info.description}</p>
@@ -60,7 +76,7 @@ export default function Info() {
         </ul>
       </section>
 
-      
+
 
       {/* Second section: black background */}
       <section className="info__section--dark">
