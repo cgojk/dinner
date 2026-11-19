@@ -17,7 +17,7 @@ export default function Info() {
           {InfoText.filter((info) => info.id === 1 || info.id === 2).map((info) => (
             <li key={info.id} className="info__item">
                {/* Image and decorative pattern */}
-          <div className="image__info--wrapper">
+         <div className="image__info--wrapper">
           <img
             src={info.id === 1 ? patternfirst : patternlast}
             alt=""
@@ -47,12 +47,7 @@ export default function Info() {
               decoding="async"
             />
           </picture>
-         <img
-    src={pattern}
-    alt=""
-    aria-hidden="true"
-    className="pattern__icon"
-  />
+         
 
           {info.id === 2 && (
     <img
@@ -63,15 +58,21 @@ export default function Info() {
     />
   )}
 
-     </div>
-         <div className="info__content">
+</div>
+ <div className="info__content">
+          <img
+    src={pattern}
+    alt=""
+    aria-hidden="true"
+    className="pattern__icon"
+  />
           <h2 className="info__title">{info.title}</h2>
           <p className="info__text">{info.description}</p>
-        </div>
+ </div>
 
   
 
-            </li>
+ </li>
           ))}
         </ul>
       </section>
