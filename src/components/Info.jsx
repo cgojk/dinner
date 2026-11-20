@@ -43,7 +43,7 @@ export default function Info() {
               className="image__info"
               width="327"
               height="400"
-              loading="eager"
+              loading="lazy"
               decoding="async"
             />
           </picture>
@@ -81,6 +81,8 @@ export default function Info() {
 
       {/* Second section: black background */}
       <section className="info__section--dark">
+        <h1 className="title__dark--light">A few Highlights form our menu</h1>
+        <p className="info__text"> We cater for all ittary requirements. but here's a glipse at some of our diner's favorites.  Our menu is revamped every season.</p>
         <ul className="info__list">
           {InfoText.filter((info) => [3, 4, 5].includes(info.id)).map((info) => (
             <li key={info.id} className="info__item">

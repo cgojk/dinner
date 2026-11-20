@@ -198,8 +198,23 @@ align-items:center;
 
      
    }
+
+            .info__content {
+       margin-top: clamp(-80px, -10vw, -2px);
+      }
+
+      .pattern__icon {
+        display: block;
+        position: relative;
+        z-index: 4;
+        align-self: center;
+        margin-bottom: 2rem;
+      }
+            
+         
+          }
   }
-  }
+  
 
   .pattern{
   display: none;
@@ -210,14 +225,25 @@ align-items:center;
 
 /* Second section: black */
 .info__section--dark {
+  
   background-color:var(--neutral-950);
   color: var(--neutral-0);
          margin-top: 0;
-    padding: var(--space-6) 0;
+    padding: var(--space-8) ;
     position: relative;
-    display: flex;
-    flex-direction: column;
+  
      justify-content: center;
+     align-items:center;
+   
+
+    .title__dark--light{
+      text-align:center;
+      margin-bottom:1em;
+    }
+    .info__text{
+      text-align:center;
+      margin-bottom:2em;
+    }
 
   
 
@@ -231,20 +257,20 @@ align-items:center;
   padding: 0 var(--space-5);
   position: relative;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 80%;
-    height: 100%;
-    background-color: hsl(0, 2%, 41%);
-    opacity: 0.6;
-    bottom: -35px;
-    left: 50%;
-    z-index: 0;
-    transform: translateX(-50%);
-    filter: blur(25px);
-    border-radius: 50%;
-  }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 80%;
+  //   height: 100%;
+  //   background-color: hsl(0, 2%, 41%);
+  //   opacity: 0.6;
+  //   bottom: -35px;
+  //   left: 50%;
+  //   z-index: 0;
+  //   transform: translateX(-50%);
+  //   filter: blur(25px);
+  //   border-radius: 50%;
+  // }
 
   .image__info {
     position: relative;
@@ -267,20 +293,20 @@ align-items:center;
          
 
           
- &::before {
-  content: "";
-  position: absolute;
- width: 80%;
-  height: 100%;
-  background-color: hsl(0, 2%, 41%);
-  opacity: 0.6;
-  bottom: -35px;
-  left: 50%;
-  z-index: 0;
-  transform: translateX(-50%);
-  filter: blur(25px);
-  border-radius: 50%;
- }
+//  &::before {
+//   content: "";
+//   position: absolute;
+//  width: 80%;
+//   height: 100%;
+//   background-color: hsl(0, 2%, 41%);
+//   opacity: 0.6;
+//   bottom: -35px;
+//   left: 50%;
+//   z-index: 0;
+//   transform: translateX(-50%);
+//   filter: blur(25px);
+//   border-radius: 50%;
+//  }
 
 .image__info{
      position: relative;
