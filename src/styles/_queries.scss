@@ -141,7 +141,7 @@ display: flex;
    
     .info__item{
      display:grid;
-    grid-template-columns: minmax(250px, 365px) minmax(400px, 1fr);
+    grid-template-columns: minmax(150px, 150px) minmax(400px, 1fr);
     grid-template-rows:1fr;
   
 
@@ -166,7 +166,25 @@ display: flex;
     grid-row:1/2;
     padding:0;
     margin-top:0;
+    text-align:left;
+    z-index:5;
+   
+    align-items: flex-start;
 
+    .pattern__info{
+    align-self: start;
+    margin-bottom: 0;
+    left:-40px;
+    z-index:2;
+   }
+
+   .info__title,
+    .info__text {
+      text-align: left;
+      margin-inline: 0;
+        margin-bottom: 0;
+    }
+   
     
     }
   }
@@ -174,8 +192,35 @@ display: flex;
 
 } 
 
+
+.info__section--light_third {
+
+.image__info--wrapper {
+  position: relative;
+  isolation: isolate;
+display: flex;
+      flex-direction: column;
+      align-items: center;
+ 
+
+ .pattern__lines {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    width: 150px;
+    height: auto;
+
+    /* Adjust these to match your design */
+  top:150px;
+    left: 70%;
+    
+    pointer-events: none;
+  }
+}
+
  
  }
+}
 
 
 @media (min-width: 1200px) {

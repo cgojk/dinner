@@ -3,13 +3,15 @@ import familygattering from "../images/homepage/family-gathering-desktop.jpg";
 import familygatteringtablet from "../images/homepage/family-gathering-tablet.jpg";
 import familygatteringmobile from "../images/homepage/family-gathering-mobile.jpg";
 import Button from "./Button";
+import patternlines from "../images/patterns/pattern-lines.svg";
+
 
 export default function ThirdSection() {
   return (
     <>
       {/* First section: white background */}
       <section className="info__section--light_third">
-        
+         <div className="image__info--wrapper">
            
               <picture className="image__info">
                 <source
@@ -28,6 +30,14 @@ export default function ThirdSection() {
                   className="image__info--light"
                 />
               </picture>
+               <img
+                    src={patternlines}
+                    alt=""
+                    aria-hidden="true"
+                    className="pattern__lines"
+                  />
+               </div>
+           
               <ul className="menu__list">
                 <li className="menu__item">Family Gathering</li>
                 <li className="menu__item">Special Events</li>
