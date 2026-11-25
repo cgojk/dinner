@@ -448,7 +448,11 @@ align-items:center;
   gap:var(--space-4);
 
   .image__info--wrapper{
-    padding:4em;
+    padding:2em;
+
+    .pattern__lines{
+      display:none;
+    }
   }
   .info__content--light{
     display:flex;
@@ -457,9 +461,11 @@ align-items:center;
     .info__title{
       color:var(--neutral-950);
       margin-bottom: var(--space-4);
+      font:var(--font-2)
     }
     .info__text{
      max-width:450px;
+     color:var(--neutral-950);
     
      text-align: center;
     }

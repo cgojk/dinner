@@ -209,13 +209,16 @@ display: flex;
     z-index: 5;
     width: 150px;
     height: auto;
-
-    /* Adjust these to match your design */
-  top:150px;
-    left: 70%;
+    top:25px;
+    left:10px;
     
     pointer-events: none;
   }
+}
+.menu__list{
+  display:flex;
+  flex-direction:row;
+  gap:2em;
 }
 
  
