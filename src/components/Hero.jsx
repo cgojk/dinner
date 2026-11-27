@@ -35,7 +35,7 @@ export default function Hero(){
             </div>
                     
     
-   <div className="hero__content">
+   <div className="hero__content container">
    <img src={logo} alt="logo" className="hero__logo"/>
    <h2 className="hero__title">Exquisite dining since 1989</h2>
       

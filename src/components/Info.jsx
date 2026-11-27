@@ -12,7 +12,7 @@ export default function Info() {
   return (
     <>
       {/* First section: white background */}
-      <section className="info__section--light">
+      <section className="info__section--light container">
         <ul className="info__list">
           {InfoText.filter((info) => info.id === 1 || info.id === 2).map((info) => (
             <li key={info.id} className="info__item">
@@ -80,7 +80,7 @@ export default function Info() {
 
 
       {/* Second section: black background */}
-      <section className="info__section--dark">
+      <section className="info__section--dark container">
         <h1 className="title__dark--light">A few Highlights form our menu</h1>
         <p className="info__text"> We cater for all ittary requirements. but here's a glipse at some of our diner's favorites.  Our menu is revamped every season.</p>
         <ul className="info__list">

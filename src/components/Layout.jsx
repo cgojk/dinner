@@ -17,7 +17,7 @@ export default function Layout() {
       <Footer/>
 
     </div>
-    <p className="footer-text--copyright">Coded by Catalina G.</p>
+   
 </>
     )
 }
